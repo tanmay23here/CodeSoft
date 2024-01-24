@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Questrial';
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+.dark-mode {
+    background-color: #000000ed;
+    color: white;
+  }
+
+#main{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+#left{
+    position: relative;
+    width: 40%;
+    height: 100%;
+}
+
+#left #textcenter{
+    margin-top: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#textcenter h1{
+    font-size: 90px;
+    font-weight: 900;
+}
+
+#textcenter P{
+    opacity: .6;
+    font-size: 12px;
+    line-height: 23px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#textcenter a{
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    font-size: 13px;
+    opacity: .6;
+    font-weight: 600;
+}
+
+.dark-mode #textcenter a{
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+#lnav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 30px;
+}
+
+#lnavr{
+    display: flex;
+    align-items: center;
+}
+
+#lnavr a{
+    margin-right: 20px;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 14px;
+    color: black;
+}
+
+#lnavr a:hover {
+    border-bottom: 1px solid black;
+}
+
+.dark-mode #lnavr a:hover {
+    border-bottom: 1px solid white;
+}
+
+.dark-mode #lnavr a{
+    color: white;
+}
+
+#lnavl{
+    display: flex;
+    align-items: center;
+}
+
+#lnavl i{
+    margin-right: 20px;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 14px;
+}
+
+#right{
+    width: 60%;
+    height: 100%;
+    background-color: white;
+}
+
+#rtop{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    background-color: royalblue;
+}
+
+#rbottom{
+    width: 100%;
+    height: 50%;
+    background-image: url(img/rose1.jpg);
+    background-size: 500px;
+    background-position: center;
+}
+
+#rtopleft{
+    width: 55%;
+    height: 100%;
+    background-image: url(img/flower.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#rtopright{
+    width: 45%;
+    height: 100%;
+    background-image: url(img/rose.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+@media (max-width: 500px) {
+    #main{
+        flex-direction: column;
+    }
+    #main #left, #main #right{
+        width: 100%;
+    }
+}
